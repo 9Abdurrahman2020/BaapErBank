@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-16">Let's Get Some <span class="font-bold text-purple-600">Moooooney</span></h1>
+    </header>
+    <section class="my-8 w-3/4 mx-auto">
+        <div class="grid grid-cols-3 gap-3">
+            <div class="bg-blue-400 p-4 text-center text-white rounded">
+                <h1 class="text-2xl">Deposit</h1>
+                <h1 class="text-4xl">$<span id="deposit-amount">00</span></h1>
+            </div>
+            <div class="bg-red-400 p-4 text-center text-white rounded">
+                <h1 class="text-2xl">Withdraw</h1>
+                <h1 class="text-4xl">$<span id="withdraw-amount">00</span> </h1>
+            </div>
+            <div class="bg-green-400 p-4 text-center text-white rounded">
+                <h1 class="text-2xl">Balance</h1>
+                <h1 class="text-4xl">$ <span id="deposit-balance">1200</span></h1>
+            </div>
+        </div>
+    </section>
+    <section class="w-3/4 mx-auto">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-yellow-400 p-3 rounded">
+                <h3 class="text-3xl text-white">Deposit amount</h3>
+                <input id="deposit-input" class="text-xl my-3 px-2" type="text" placeholder="Amount"><br>
+                <button id="deposit-btn" class="bg-red-600 text-white px-3 py-1 rounded">Deposit</button>
+            </div>
+            <div class="bg-red-600 p-3 rounded">
+                <h3 class="text-3xl text-white">Withdraw amount</h3>
+                <input id="withdraw-input" class="text-xl my-3 px-2" type="text" placeholder="Amount"><br>
+                <button id="withdraw-btn" class="bg-yellow-500 text-white px-3 py-1 rounded">Withdraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/banking.js"></script>
+</body>
+</html>
